@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 header {
-  width: 95.4%;
+  /*width: 95.4%;*/
   padding-left: 2.3%;
   padding-right: 2.3%;
   outline: 1px solid #f1fa15;
@@ -62,10 +62,15 @@ header {
   position: relative;
   z-index: 100;
 }
+
+.index-logo {
+    float: left;
+}
+
 .index-logo img {
   
-  width: 12.8%;
-  min-height: 5.25%;
+ /* width: 12.8%;
+  min-height: 5.25%;*/
   margin-right: 0;
   margin-top: 0.75%;
   outline: 1px solid rgba(30, 1, 245, 0.8);
@@ -87,11 +92,72 @@ header {
   float: left;
 }
 }
+
+
+
+.glaccy-slider{
+    position: relative;
+    background-color: #93a99d;
+}
+
 .slider {
   z-index: 10;
-  position: absolute;
+  position: relative;
   top: 0;
 }
+
+.slider-inner {
+    overflow: hidden;
+}
+
+
+.slider-slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+}
+
+.slider-slides img {
+    float: left;
+    width: 1044px;
+    height: 881px;
+}
+
+.slider-controls {
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border: 2px solid white;
+    border-radius: 50%;
+    
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #ffffff;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-1044px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-2088px);
+}
+
+
+
 .promo {
   width: 95.4%;
   min-height: 19.08%;
