@@ -34,11 +34,11 @@ a {
   display: table;
   clear: both;
 }
-main {
+.main-container {
   padding-bottom: 432px;
   z-index: 2;
 }
-.container, .content {
+.main-container, .content {
   padding-right: 2.3%;
   padding-left: 2.3%;
 }
@@ -209,8 +209,8 @@ main {
   margin-right: 2.2%;
   outline: 1px solid #f1fa15;
   box-shadow: 0 0 40px #f1fa15 inset;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
+border-radius: 20px;
+  
 }
 .subscribe {
   min-height: 200px;
@@ -327,12 +327,12 @@ section .half:last-child {
   margin-right: 0;
 }
 section .half {
-  margin: 0 2.2% 2.2% 0;
+  margin: 0 2.2% 0 0;
   width: 48.9%;
   border-radius: 20px;
 }
 section .quarter {
-  margin: 0 2.2% 0 0;
+  margin: 0 2.2% 2.2% 0;
   width: 23.35%;
     
 }
