@@ -2,7 +2,7 @@ html,
 body {
   background: #93a99d;
   font-size: 14px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
@@ -28,8 +28,7 @@ a {
   outline: 1px solid rgba(8, 235, 25, 0.8);
   box-shadow: inset 0 0 40px rgba(8, 235, 25, 0.8);
 }
-section,
-.row {
+section {
   padding: 0;
   box-sizing: border-box;
 }
@@ -38,6 +37,20 @@ section,
   display: table;
   clear: both;
 }
+
+main {  position: relative;
+  margin-top: 515px;
+  padding: 0;
+  z-index: 2;
+    
+}
+
+.container {
+    padding-right: 2.3%;
+    padding-left: 2.3%;
+
+}
+
 .main-navigation {
   float: left;
   min-width: 29.16%;
@@ -72,6 +85,8 @@ section,
 }
 .index-logo {
   float: left;
+    width: 145px;
+    margin-right: 30px;
 }
 .index-logo img {
   margin-right: 0;
@@ -176,7 +191,7 @@ section,
   width: 48.9%;
   min-height: 227px;
   padding: 20px;
-  background-image: url("/img/bg/rassp-bg.jpg");
+  background-image: url("../img/bg/rassp-bg.jpg");
   margin-right: 2.2%;
   outline: 1px solid #f1fa15;
   box-shadow: 0 0 40px #f1fa15 inset;
@@ -188,7 +203,7 @@ section,
   min-height: 227px;
   padding: 20px;
   margin: 0;
-  background-image: url("/img/bg/choko-bg.jpg");
+  background-image: url("../img/bg/choko-bg.jpg");
   outline: 1px solid #f1fa15;
   box-shadow: 0 0 40px #f1fa15 inset;
   box-sizing: border-box;
@@ -240,9 +255,9 @@ section,
   background-color: #f8f7f4;
 }
 .map {
-  width: 100%;
+  width: 100%vw;
   height: 430px;
-  background-image: url("/img/bg/map.jpg");
+  background-image: url("../img/bg/map.jpg");
   outline: 1px solid rgba(203, 13, 159, 0.8);
   box-shadow: inset 0 0 40px rgba(203, 13, 159, 0.8);
   position: relative;
@@ -330,12 +345,9 @@ section,
   top: 567px;
   left: 2.3%;
 }
-.container {
-  position: relative;
-  margin-top: 515px;
-  padding: 0;
-  z-index: 2;
-}
+
+
+
 section .quarter,
 section .half {
   float: left;
@@ -364,7 +376,7 @@ section .hundred {
   float: left;
   margin: 0 2.3%;
   min-height: 307px;
-  background-image: url(/img/bg/wafer-patern.jpg);
+  background-image: url("../img/bg/wafer-patern.jpg");
   color: #000000;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
