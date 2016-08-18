@@ -185,6 +185,7 @@ main {
 }
 .product {
     min-height: 324px;
+
   outline: 1px solid #f1fa15;
   box-shadow: 0 0 40px #f1fa15 inset;
 }
@@ -309,7 +310,10 @@ main {
   left: 2.3%;
 }
 
-
+.product .quarter {
+    margin: 0;
+    margin-bottom: 2.2%;
+}
 section .quarter,
 section .half {
   float: left;
@@ -322,14 +326,14 @@ section .half:last-child {
   margin-right: 0;
 }
 section .half {
-  margin: 0 2.2% 0 0;
+  margin: 0 2.2% 2.2% 0;
   width: 48.9%;
   border-radius: 20px;
 }
 section .quarter {
   margin: 0 2.2% 0 0;
   width: 23.35%;
-    margin-bottom: 2.75%;
+    
 }
 .info {
   margin: 0;
