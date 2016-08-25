@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -17,9 +18,14 @@
           </a>
         </div>
         <nav class="main-nav">
-          <ul>
+          <ul class="main-menu">
             <li class="current">
               <a href="catalog.html">Каталог</a>
+               <ul class="sub-menu">
+                    <li><a href="#1">Разработка</a></li>
+                    <li><a href="#2">Продвижение</a></li>
+                    <li><a href="#3">Контекст</a></li>
+                </ul>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -30,17 +36,18 @@
           </ul>
         </nav>
         <div class="login-bar clearfix">
-          <ul>
-            <li>
-              <a class="search" href="#">Поиск</a>
-            </li>
-            <li>
+         <div class="search-block">
+              <a class="search" href="#"></a>
+              <div class="icon"></div>
+              <span>Пусто</span>
+           </div>
+           <div class="login-block">
               <a class="login" href="#">Вход</a>
-            </li>
-            <li>
+              <div class="icon"></div>
+           </div>
+             <div class="bascket-block">
               <a class="bascket" href="#">Пусто</a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
       <div class="head-addin clearfix">
@@ -65,7 +72,7 @@
               <p>
                 Крем-брюле и пломбир с малиновым джемом
               </p>
-              <a class="btn" href="#">Давайте оба!</a>
+              <a class="btn btn-slider" href="#">Давайте оба!</a>
             </div>
             <!--<div class="clearfix"></div>-->
           </div>
@@ -98,39 +105,39 @@
         <div class="promo-left half">
           <h2>Малинка даром!</h2>
           <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="btn" href="#">Хочу варенье!</a>
+          <a class="btn promotion" href="#">Хочу варенье!</a>
         </div>
 
         <div class="promo-right half">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="btn" href="#">Хочу шоколадки!</a>
+          <a class="btn promotion" href="#">Хочу шоколадки!</a>
         </div>
       </section>
 
       <section class="bestsellers clearfix">
-        <div class="product quarter">
+        <div class="product hit quarter">
           <img src="img/catalog/product1.png" width="240" height="240" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <span>310р/кг</span>
+          <span>310  /кг</span>
         </div>
 
-        <div class="product quarter">
+        <div class="product hit quarter">
           <img src="img/catalog/product2.png" width="240" height="240" alt="Сливочно-кофейное с кусочками шоколада">
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <span>380р/кг</span>
+          <span>380 /кг</span>
         </div>
 
-        <div class="product quarter">
+        <div class="product hit quarter">
           <img src="img/catalog/product3.png" width="240" height="240" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <span>355р/кг</span>
+          <span>355 /кг</span>
         </div>
 
-        <div class="product quarter">
+        <div class="product hit quarter">
           <img src="img/catalog/product4.png" width="240" height="240" alt="Сливочное крем-брюле с карамельной подливкой">
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          <span>415р/кг</span>
+          <span>415/кг</span>
         </div>
       </section>
 
@@ -146,7 +153,7 @@
 
             <!--Псевдоэлемент-->
             <div class="row2">
-            <p>для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального и экологически чистого сырья.</p>
+            <p>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального и экологически чистого сырья.</p>
             </div>
           </div>
 
@@ -176,7 +183,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <input type="text" name="e-mail" placeholder="Электронная почта">
-            <input type="submit" value="Отправить">
+            <input class="btn btn-subscribe" type="submit" value="Отправить">
           </form>
         </div>
       </section>
@@ -188,28 +195,34 @@
 
         <div class="contacts">
           <div>
-            <span>Адрес главного офиса и офлайн магазина:</span>
-            <span>ул.Большая Конюшенная<br>19/8, Санкт-Петербург</span>
+            <span >Адрес главного офиса и офлайн магазина:</span>
+            <span class="street">ул.Большая Конюшенная<br>19/8, Санкт-Петербург</span>
 
             <p>
               Для заказов по телефону:
-              <span>8 812 450 25 25</span>
+              <span class="phone"><br>8 812 450 25 25</span>
               <br>(с 10 до 20 ежедневно)
             </p>
-            <a href="#" title="">Форма обратной связи</a>
+            <a class="btn btn-contacts" href="#" title="">Форма обратной связи</a>
           </div>
         </div>
         </div>
         
       </section>
+      
+      
+      <a href="index.html">
+            <img src="img/icon/logo.svg" width="154" height="64" alt="GllacyShop">
+          </a>
 
     </main>
           <footer class="main-footer">
         <div class="container clearfix">
-          <section class="footer-social">
-            <a class=" social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class=" social-btn social-btn-fb" href="#">Фэйсбук</a>
-            <a class=" social-btn social-btn-inst" href="#">Инстаграм</a>
+          <section class="footer-social ">
+            <a class=" social-btn social-btn-tw" href="#"> <img src="img/icon/icon-tw.svg" width="32" height="32" alt="Твиттер"></a>
+            <a class=" social-btn social-btn-vk" href="#"><img src="img/icon/icon-vk.svg" width="32" height="32" alt="Вконтакте"></a>
+            <a class=" social-btn social-btn-fb" href="#"><img src="img/icon/icon-fb.svg" width="32" height="32" alt="Фэйсбук"></a>
+            <a class=" social-btn social-btn-inst" href="#"><img src="img/icon/icon-insta.svg" width="32" height="32" alt="Инстаграм"></a>
           </section>
           <section class="footer-contacts">
             <div>

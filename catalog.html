@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -67,7 +68,7 @@
       </div>
       <h1>Сливочное мороженное</h1>
       <form class="catalog-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="sorted">
+        <fieldset class="fieldset-form">
 
           <legend>Сортировка:</legend>
           <select name="days" multiple size="1">
@@ -80,7 +81,7 @@
           </select>
         </fieldset>
 
-        <fieldset class="price-filter">
+        <fieldset class="fieldset-form">
           <legend class="price-controls">
             Цена:
             <input class="min-price" type="text" value="100 руб.">-
@@ -96,130 +97,134 @@
           </div>
         </fieldset>
 
-        <fieldset class="fat-content">
+        <fieldset class="fieldset-form">
           <legend>Жирность:</legend>
-          <div>
+          <ul class="filters-list">
+          <li>
             <input type="radio" name="product1" value="0%">
             <label for="fat1">0%</label>
-          </div>
+          </li>
 
-          <div>
+          <li>
             <input type="radio" name="product2" value="10%" checked>
             <label for="fat2">10%</label>
-          </div>
+          </li>
 
-          <div>
+          <li>
             <input type="radio" name="product3" value="30%">
             <label for="fat3">30%</label>
-          </div>
+          </li>
 
 
-          <div>
+          <li>
             <input type="radio" name="product4" value="more 30%">
             <label for="fat4">выше 30%</label>
-          </div>
+          </li>
+            </ul>
         </fieldset>
 
 
-        <fieldset class="fillers">
+        <fieldset class="fieldset-form">
           <legend>Наполнители:</legend>
-          <div>
+          <ul class="filters-list">
+          <li>
             <input type="checkbox" name="filler1" id="filler1" checked>
             <label for="filler1">шоколадные</label>
-          </div>
+          </li>
 
-          <div>
+          <li>
             <input type="checkbox" name="filler2" id="filler2" checked>
             <label for="filler2">сахарные присыпки</label>
-          </div>
+          </li>
 
-          <div>
+          <li>
             <input type="checkbox" name="filler3" id="filler3">
             <label for="filler3">фрукты</label>
-          </div>
+          </li>
 
-          <div>
+          <li>
             <input type="checkbox" name="filler4" id="filler4">
             <label for="filler4">сиропы</label>
-          </div>
+          </li>
 
-          <div>
+          <li>
             <input type="checkbox" name="filler5" id="filler5">
             <label for="filler5">джемы</label>
-          </div>
+          </li>
+          </ul>
         </fieldset>
-        <button class="btn" type="submit">Применить</button>
+        <button class="btn-filters" type="submit">Применить</button>
       </form>
 
       <section class="bestsellers-catalog clearfix">
       
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product1.png" width="240" height="240" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <span>310р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product2.png" width="240" height="240" alt="Сливочно-кофейное с кусочками шоколада">
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
             <span>380р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product3.png" width="240" height="240" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <span>355р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product4.png" width="240" height="240" alt="Сливочное крем-брюле с карамельной подливкой">
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             <span>415р/кг</span>
           </div>
      
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product5.png" width="240" height="240" alt="Сливочное с брусничным джемом">
             <a href="#">Сливочное с брусничным джемом </a>
             <span>325р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product6.png" width="240" height="240" alt="Сливочно-черничное с цельными ягодами черники">
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
             <span>410р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product7.png" width="240" height="240" alt="Сливочно-лимонное с карамельной присыпкой">
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
             <span>375р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product8.png" width="240" height="240" alt="Сливочное с шоколадной стружкой">
             <a href="#">Сливочное с шоколадной стружкой</a>
             <span>320р/кг</span>
           </div>
        
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product9.png" width="240" height="240" alt="Сливочно-ванильное с кусочками шоколада">
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
             <span>440р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product10.png" width="240" height="240" alt="Сливочное с ментоловым сиропом">
             <a href="#">Сливочное с ментоловым сиропом</a>
             <span>435р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product11.png" width="240" height="240" alt="Сливочное с кусочками черного шоколада">
             <a href="#">Сливочное с кусочками черного шоколада</a>
             <span>355р/кг</span>
           </div>
 
-          <div class="product quarter">
+          <div class="product hit quarter">
             <img src="img/catalog/product12.png" width="240" height="240" alt="Сливочное с мятным сиропом">
             <a href="#">Сливочное с мятным сиропом</a>
             <span>420р/кг</span>
